@@ -5,7 +5,8 @@
 # CSCI 480
 # Dr. MacEvoy
 
-# This program is a soltuion to the Kattis problem 'WERTYU' which can be found at https://open.kattis.com/problems/wertyu
+# This program is a solution to the Kattis problem 'WERTYU' which can be found at https://open.kattis.com/problems/wertyu
+
 
 # shiftLeft function accepts a string in all uppercase letters, and returns a string with each character in the string shifted one key to the left on the keyboard.
 def shiftLeft(string)
@@ -29,7 +30,7 @@ end
 
 # solve function to get console input for the string, and print returned value from shiftLeft() to console
 def solve
-    usr_input = gets.chomp
+    usr_input = gets.chomp # .chomp removes line break from input
     puts shiftLeft(usr_input)
 end
 
