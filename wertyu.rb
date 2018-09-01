@@ -1,4 +1,4 @@
-#!/usr/bin/ruby -w
+#!/usr/bin/ruby
 
 # Carter Hough
 # 08/31/18
@@ -34,4 +34,41 @@ def solve
     puts shiftLeft(usr_input)
 end
 
-solve()
+
+# Run automated unit tests if first system argument after program call is "test", else run program normally per Kattis expected output.
+if ARGV[0] == "test"
+    require 'test/unit'
+    
+    # Unit tests
+    class TestMethods < Test::Unit::TestCase 
+        def test_shiftLeft_simple
+            assert_equal("I AM FINE TODAY.", shiftLeft("O S, GOMR YPFSU/"))
+        end
+        def test_shiftLeft_not_equal
+            assert_not_equal("THIS IS FALSE", shiftLeft("NOT TRUE"))
+        end
+        def test_shiftLeft_all_chars
+            assert_equal("`1234567890- QWERTYUIOP[] ASDFGHJKL; ZXCVBNM,.", shiftLeft("1234567890-= WERTYUIOP[]\\ SDFGHJKL;\' XCVBNM,./"))
+        end
+        def test_shiftLeft_first_char_wrong
+            assert_not_equal("ELLO WORLD", shiftLeft("JR;;P EPT;F"))
+        end
+        def test_shiftLeft_last_char_wrong
+            assert_not_equal("HELLO WORL", shiftLeft("JR;;P EPT;F"))
+        end
+        def test_shiftLeft_max_input
+            assert_equal("Q"*10000, shiftLeft("W"*10000))
+        end
+        def test_shiftLeft_min_input
+            assert_equal("Q", shiftLeft("W"))
+        end
+        def test_shiftLeft_empty_input
+            assert_equal("", shiftLeft(""))
+        end
+        def test_shiftLeft_blank_space_input
+            assert_equal(" ", shiftLeft(" "))
+        end
+    end
+else
+    solve()
+end
