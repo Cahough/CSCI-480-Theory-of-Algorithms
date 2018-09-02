@@ -5,7 +5,7 @@ This will be the main repo for the CSCI 480 Theory of Algorithms class. Each ass
 <ol>
   <li> Kattis Assignment </li>
   Solution for https://open.kattis.com/problems/goodmorning
-  // Link to branch
+  <br>https://github.com/Cahough/CSCI-480-Theory-of-Algorithms/tree/ass1_kattis
 </ol>
 
 ## Class Work/Projects
