@@ -10,15 +10,16 @@
 def numOneBits(integer)
     # Convert decimal integer to binary and return number of "1"s in the string
     return integer.to_s(2).count("1")
-
 end
     
 def solve
-    num_test_cases = gets.chomp.to_i
-    for i in 1..num_test_cases
-        test_case = gets.chomp.to_i
-        numOneBits(test_case)
+    numTestCases = gets.chomp.to_i
+    returnedValues = []
+    for _ in 1..numTestCases
+        testCase = gets.chomp.to_i
+        returnedValues.append(numOneBits(testCase))
     end
+    puts returnedValues
 end
 
 # Run automated unit tests if first system argument after program call is "test", else run program normally per Kattis expected output.
