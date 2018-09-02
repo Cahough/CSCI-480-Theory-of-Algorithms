@@ -4,8 +4,8 @@ This will be the main repo for the CSCI 480 Theory of Algorithms class. Each ass
 ## Projects/Assignments
 <ol>
   <li> Kattis Assignment </li>
-  Solution for https://open.kattis.com/problems/wertyu
-  // Link to branch
+  https://open.kattis.com/problems/goodmorning
+  <br>https://github.com/Cahough/CSCI-480-Theory-of-Algorithms/tree/ass1_kattis
 </ol>
 
 ## Class Work/Projects
