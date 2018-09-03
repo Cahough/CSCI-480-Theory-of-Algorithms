@@ -1,7 +1,7 @@
 #!/usr/bin/ruby
 
 # Carter Hough
-# 09/02/18
+# 09/03/18
 # CSCI 480
 # Dr. MacEvoy
 
@@ -14,14 +14,17 @@ end
     
 def solve
     numTestCases = gets.chomp.to_i
-    returnedValues = []
 
     for _ in 1..numTestCases
         testCase = gets.chomp.to_i
-        returnedValues.append(numOneBits(testCase))
+        maxOneBits = 0
+        while testCase > 0
+            maxOneBits = [maxOneBits, numOneBits(testCase)].max
+            testCase /= 10
+        end
     end
 
-    puts returnedValues
+    puts maxOneBits
 end
 
 # Run automated unit tests if first system argument after program call is "test", else run program normally per Kattis expected output.
