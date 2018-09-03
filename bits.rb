@@ -14,6 +14,7 @@ end
     
 def solve
     numTestCases = gets.chomp.to_i
+    maxOneBitsList = []
 
     for _ in 1..numTestCases
         testCase = gets.chomp.to_i
@@ -22,9 +23,10 @@ def solve
             maxOneBits = [maxOneBits, numOneBits(testCase)].max
             testCase /= 10
         end
+        maxOneBitsList.append(maxOneBits)
     end
 
-    puts maxOneBits
+    puts maxOneBitsList
 end
 
 # Run automated unit tests if first system argument after program call is "test", else run program normally per Kattis expected output.
