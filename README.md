@@ -5,11 +5,11 @@ This will be the main repo for the CSCI 480 Theory of Algorithms class. Each ass
 <ol>
   <li> Kattis Assignment </li>
   Solution for https://open.kattis.com/problems/bits
-  https://github.com/Cahough/CSCI-480-Theory-of-Algorithms/tree/ass1_kattis
+  <br>https://github.com/Cahough/CSCI-480-Theory-of-Algorithms/tree/ass1_kattis
   
   <li> PRNG Assignment </li>
   Implements Python's Random module (Mersenne Twister PRNG algorithm) to shuffle a deck of cards
-  https://github.com/Cahough/CSCI-480-Theory-of-Algorithms/tree/ass2_rng
+  <br>https://github.com/Cahough/CSCI-480-Theory-of-Algorithms/tree/ass2_rng
 </ol>
 
 ## Class Work/Projects
