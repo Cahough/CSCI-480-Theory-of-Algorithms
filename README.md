@@ -15,7 +15,3 @@ This will be the main repo for the CSCI 480 Theory of Algorithms class. Each ass
   A presentation of Floyd's Cycle Detection Algorithm
   <br>Slideshow at https://docs.google.com/presentation/d/1vvdOQcUR1yiqGIrOjrQL2szVyd3MOvqAWHtICdbwjgk/edit?usp=sharing
 </ol>
-
-## Class Work/Projects
-<ol>
-</ol>
