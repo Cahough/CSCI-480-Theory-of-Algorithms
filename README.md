@@ -10,6 +10,10 @@ This will be the main repo for the CSCI 480 Theory of Algorithms class. Each ass
   <li> PRNG Assignment </li>
   Implements Python's Random module (Mersenne Twister PRNG algorithm) to shuffle a deck of cards
   <br>https://github.com/Cahough/CSCI-480-Theory-of-Algorithms/tree/ass2_rng
+  
+  <li> Algorithm Presentation </li>
+  A presentation of Floyd's Cycle Detection Algorithm
+  <br>Slideshow at https://docs.google.com/presentation/d/1vvdOQcUR1yiqGIrOjrQL2szVyd3MOvqAWHtICdbwjgk/edit?usp=sharing
 </ol>
 
 ## Class Work/Projects
